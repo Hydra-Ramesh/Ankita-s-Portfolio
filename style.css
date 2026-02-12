@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    min-height:100vh;
+    transition:0.5s;
+}
+
+/* Dark Mode */
+#dark-toggle{
+    display:none;
+}
+
+#dark-toggle:checked ~ *{
+    background:#111 !important;
+    color:#eee !important;
+}
+
+.toggle-btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    font-size:20px;
+    cursor:pointer;
+    background:white;
+    color:black;
+    padding:8px 12px;
+    border-radius:50%;
+    z-index:1000;
+}
+
+/* Header */
+header{
+    text-align:center;
+    padding:100px 20px;
+}
+
+header h1{
+    font-size:48px;
+    font-weight:700;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 25px;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#764ba2;
+}
+
+/* Sections */
+section{
+    padding:60px 10%;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:30px;
+    font-size:28px;
+}
+
+/* Glass Effect */
+.glass{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    margin:40px 10%;
+    padding:40px;
+}
+
+/* Cards */
+.card-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    padding:25px;
+    border-radius:20px;
+    width:300px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-15px) scale(1.05);
+}
+
+/* Skills */
+.skills span{
+    display:inline-block;
+    margin:10px;
+    padding:10px 20px;
+    background:rgba(255,255,255,0.2);
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.skills span:hover{
+    background:white;
+    color:#764ba2;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    background:rgba(0,0,0,0.2);
+}
+
+/* Animations */
+.fade-in{
+    opacity:0;
+    animation:fadeIn 1s forwards;
+}
+
+.delay{
+    animation-delay:0.5s;
+}
+.delay2{
+    animation-delay:1s;
+}
+.delay3{
+    animation-delay:1.5s;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .card-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    header h1{
+        font-size:32px;
+    }
+}

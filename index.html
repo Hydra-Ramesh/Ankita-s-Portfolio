@@ -4,237 +4,94 @@
     <meta charset="UTF-8">
     <title>Ankita Rout | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body{
-            background: linear-gradient(to right, #f8f9fa, #e3f2fd);
-            color:#333;
-        }
-
-        header{
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color:white;
-            text-align:center;
-            padding:60px 20px;
-        }
-
-        header h1{
-            font-size:40px;
-            font-weight:700;
-        }
-
-        header p{
-            margin-top:10px;
-            font-size:18px;
-        }
-
-        nav{
-            display:flex;
-            justify-content:center;
-            background:white;
-            padding:15px;
-            box-shadow:0 4px 8px rgba(0,0,0,0.1);
-            position:sticky;
-            top:0;
-        }
-
-        nav a{
-            margin:0 15px;
-            text-decoration:none;
-            color:#333;
-            font-weight:600;
-            transition:0.3s;
-        }
-
-        nav a:hover{
-            color:#2575fc;
-        }
-
-        section{
-            padding:60px 10%;
-        }
-
-        .section-title{
-            text-align:center;
-            margin-bottom:40px;
-            font-size:28px;
-            color:#2575fc;
-            font-weight:700;
-        }
-
-        .about{
-            text-align:center;
-            line-height:1.8;
-        }
-
-        .card-container{
-            display:flex;
-            justify-content:space-between;
-            flex-wrap:wrap;
-            gap:20px;
-        }
-
-        .card{
-            background:white;
-            padding:25px;
-            border-radius:15px;
-            box-shadow:0 8px 20px rgba(0,0,0,0.1);
-            flex:1 1 30%;
-            transition:0.3s;
-        }
-
-        .card:hover{
-            transform:translateY(-10px);
-        }
-
-        .card h3{
-            margin-bottom:15px;
-            color:#6a11cb;
-        }
-
-        .skills{
-            display:flex;
-            flex-wrap:wrap;
-            gap:15px;
-            justify-content:center;
-        }
-
-        .skill{
-            background:#2575fc;
-            color:white;
-            padding:10px 20px;
-            border-radius:25px;
-            font-size:14px;
-        }
-
-        footer{
-            background:#6a11cb;
-            color:white;
-            text-align:center;
-            padding:20px;
-            margin-top:40px;
-        }
-
-        .btn{
-            display:inline-block;
-            margin-top:20px;
-            padding:10px 25px;
-            background:#2575fc;
-            color:white;
-            text-decoration:none;
-            border-radius:25px;
-            transition:0.3s;
-        }
-
-        .btn:hover{
-            background:#6a11cb;
-        }
-
-        @media(max-width:768px){
-            .card-container{
-                flex-direction:column;
-            }
-        }
-
-    </style>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Ankita Rout</h1>
-    <p>B.Tech in Computer Science | Brainware University</p>
-    <p>Current CGPA: 8.61</p>
-</header>
+    <!-- Dark Mode Toggle -->
+    <input type="checkbox" id="dark-toggle">
+    <label for="dark-toggle" class="toggle-btn">🌙</label>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#activities">Activities</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <header>
+        <h1 class="fade-in">Ankita Rout</h1>
+        <p class="fade-in delay">B.Tech in Computer Science</p>
+        <p class="fade-in delay2">Brainware University | CGPA: 8.61</p>
+        <a href="#contact" class="btn fade-in delay3">Hire Me</a>
+    </header>
 
-<section id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="about">
-        <p>Hello! I'm Ankita Rout, a passionate Computer Science student at Brainware University. 
-        I am currently pursuing B.Tech with a CGPA of 8.61. 
-        I enjoy building creative and user-friendly web applications. 
-        I am always eager to learn new technologies and improve my problem-solving skills.</p>
-        <a href="#" class="btn">Download Resume</a>
-    </div>
-</section>
+    <section class="glass">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate Computer Science student with strong interest in
+            Web Development and Software Engineering. I enjoy creating modern,
+            responsive and user-friendly applications with clean UI design.
+        </p>
+    </section>
 
-<section id="projects">
-    <h2 class="section-title">My Projects</h2>
-    <div class="card-container">
-        
-        <div class="card">
-            <h3>🌐 Smart Attendance System</h3>
-            <p>A web-based attendance system using face recognition technology to automate student attendance efficiently.</p>
+    <section>
+        <h2>Projects</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Smart Attendance System</h3>
+                <p>Face recognition based attendance system to automate classroom attendance efficiently.</p>
+            </div>
+
+            <div class="card">
+                <h3>E-Commerce Website</h3>
+                <p>Responsive online shopping platform with cart system and secure checkout UI.</p>
+            </div>
+
+            <div class="card">
+                <h3>Student Result Management</h3>
+                <p>Dashboard-based system to manage and analyze student academic performance.</p>
+            </div>
+
         </div>
+    </section>
 
-        <div class="card">
-            <h3>🛒 E-Commerce Website</h3>
-            <p>A fully responsive online shopping website with product listings, cart system and secure checkout design.</p>
+    <section class="glass">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>MySQL</span>
+            <span>C Programming</span>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>📊 Student Result Management</h3>
-            <p>A result management system that stores and manages student academic performance with interactive dashboards.</p>
+    <section>
+        <h2>Extra Curricular Activities</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>💃 Dancing</h3>
+                <p>Active participant in cultural programs and stage performances.</p>
+            </div>
+
+            <div class="card">
+                <h3>✍ Poetry</h3>
+                <p>Creative poetry writing reflecting imagination and emotions.</p>
+            </div>
         </div>
+    </section>
 
-    </div>
-</section>
-
-<section id="skills">
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="skills">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">Java</div>
-        <div class="skill">Python</div>
-        <div class="skill">C Programming</div>
-        <div class="skill">MySQL</div>
-    </div>
-</section>
-
-<section id="activities">
-    <h2 class="section-title">Extra Curricular Activities</h2>
-    <div class="card-container">
-        <div class="card">
-            <h3>💃 Dancing</h3>
-            <p>I actively participate in cultural programs and enjoy expressing creativity through dance performances.</p>
-        </div>
-        <div class="card">
-            <h3>✍ Poetry</h3>
-            <p>I love writing poems that reflect emotions, creativity, and imagination.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <div class="about">
+    <section class="glass" id="contact">
+        <h2>Contact</h2>
         <p>Email: ankita@example.com</p>
         <p>Phone: +91 XXXXX XXXXX</p>
-        <a href="#" class="btn">Hire Me</a>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <p>© 2026 Ankita Rout | Designed with ❤</p>
-</footer>
+    <footer>
+        © 2026 Ankita Rout | Designed with ❤
+    </footer>
 
 </body>
 </html>
